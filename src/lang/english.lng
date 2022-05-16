@@ -17,6 +17,8 @@ STR_PARAM_ROSTER_DESC                                           :Choose which se
 STR_PARAM_ROSTER_OPTION_0                                       :There is only one roster
 STR_PARAM_ROSTER_OPTION_1                                       :The Blue Danube
 STR_PARAM_SHIP_CAPACITY_MULTIPLIER                              :Ship Capacity Multiplier
+STR_PARAM_SHIP_RUNNING_COST_MULTIPLIER                          :Ship Running Cost Multiplier
+STR_PARAM_SHIP_PURCHASE_COST_MULTIPLIER                         :Ship Purchase Cost Multiplier
 
 STR_NAME_SUFFIX_BLANK											:
 STR_NAME_SUFFIX_BARGE_TUG                                       :Barge Tug
