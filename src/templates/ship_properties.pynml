@@ -4,10 +4,10 @@
 switch (FEAT_SHIPS, SELF, ${ship.id}_switch_purchase_cargo_capacity, cargo_type_in_veh) {
     <!--! if FISH cargo is missing, trawlers need to still work -->
     <tal:trawlers condition="ship.str_type_info.lower()=='trawler'">
-        FISH: return ${ship.capacity_fish_holds};
-        PASS: return ${ship.capacity_pax};
+        FISH: return ${ship.capacity_fish_holds} * param_ship_capacity_multiplier;
+        PASS: return ${ship.capacity_pax} * param_ship_capacity_multiplier;
     </tal:trawlers>
-    return ${ship.default_cargo_capacity};
+    return ${ship.default_cargo_capacity} * param_ship_capacity_multiplier;
 }
 
 // -- smoke -- //
