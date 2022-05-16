@@ -1,9 +1,9 @@
 // -- ships that have subtype refits for capacity rely on the capacities_refittable prop //
 <!--! assumes exactly 3 subtype refits, which is a sane amount; convert to repeat if more are ever needed -->
 switch (FEAT_SHIPS, SELF, ${ship.id}_switch_cargo_capacity, cargo_subtype) {
-    0: return ${ship.capacities_refittable[0]};
-    1: return ${ship.capacities_refittable[1]};
-    2: return ${ship.capacities_refittable[2]};
+    0: return ${ship.capacities_refittable[0]} * param_ship_capacity_multiplier;
+    1: return ${ship.capacities_refittable[1]} * param_ship_capacity_multiplier;
+    2: return ${ship.capacities_refittable[2]} * param_ship_capacity_multiplier;
     return ${ship.capacities_refittable[0]};
 }
 
