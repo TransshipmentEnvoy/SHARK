@@ -29,8 +29,8 @@ item(FEAT_SHIPS, ${ship.id}, ${ship.numeric_id}) {
         speed:                          ${ship.speed}mph;
         ocean_speed_fraction:           ${ship.ocean_speed};
         canal_speed_fraction:           ${ship.canal_speed};
-        cost_factor:                    ${ship.buy_cost} * param_ship_purchase_cost_multiplier;
-        running_cost_factor:            ${ship.running_cost} * param_ship_running_cost_multiplier;
+        cost_factor:                    ${ship.buy_cost} + param_ship_purchase_cost_multiplier;
+        running_cost_factor:            ${ship.running_cost} + param_ship_running_cost_multiplier;
         refit_cost:                     0; // leave at 0 for refitting without defining cb
         is_refittable:                  1;
         refittable_cargo_classes:       bitmask(${ship.refittable_classes});

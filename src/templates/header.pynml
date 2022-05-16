@@ -55,18 +55,18 @@ grf {
         param_ship_running_cost_multiplier {
             type:    int;
             name:    string(STR_PARAM_SHIP_RUNNING_COST_MULTIPLIER);
-            min_value: 1;
+            min_value: 0;
             max_value: 100;
-            def_value: 1;
+            def_value: 0;
         }
     }
     param 5 {
         param_ship_purchase_cost_multiplier {
             type:    int;
             name:    string(STR_PARAM_SHIP_PURCHASE_COST_MULTIPLIER);
-            min_value: 1;
+            min_value: 0;
             max_value: 100;
-            def_value: 1;
+            def_value: 0;
         }
     }
 }
